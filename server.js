@@ -65,11 +65,11 @@ app.get('/bad', (request, response) => {
   });
 });
 
-// app.get('/maintenance', (req, res) => {
-//   res.render('maintenance.hbs', {
-//     pageTitle: 'Maintenance Page'
-//   });
-// });
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server is up and running on port ${port}.`);
